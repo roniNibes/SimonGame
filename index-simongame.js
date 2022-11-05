@@ -58,14 +58,14 @@ $(document).on('keydown', function (e) {
 // ! ini event buat di hp
 
 
-$(function($) { // DOM ready and $ alias secured
+ $('h1').on('click', function(){
+        if (!started) {
 
-    $(window).on('keydown', function(){
-      alert('udah ketekan');
+            $('#level-title').text(`Level ${level}`);
+            nextSequence();
+            started = true;
+        }
     });
-  
-  });
-
 $('.btn').click(function(){
         
     let userChosenColour = $(this).attr('id');
