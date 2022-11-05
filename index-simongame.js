@@ -57,8 +57,13 @@ $(document).on('keydown', function (e) {
 
 // ! ini event buat di hp
 
-$('body').on('keydown', function(){
-    alert('udah keteken');
+
+$(function($) { // DOM ready and $ alias secured
+
+    $(window).on('keydown', function(e){
+      alert( e.which );
+    });
+  
   });
 
 $('.btn').click(function(){
