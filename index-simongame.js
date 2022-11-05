@@ -58,7 +58,7 @@ $(document).on('keydown', function (e) {
 // ! ini event buat di hp
 
 
- $('h1').on('click', function(){
+ $('h1').on('click touchend', function(){
         if (!started) {
 
             $('#level-title').text(`Level ${level}`);
@@ -66,6 +66,7 @@ $(document).on('keydown', function (e) {
             started = true;
         }
     });
+
 $('.btn').click(function(){
         
     let userChosenColour = $(this).attr('id');
