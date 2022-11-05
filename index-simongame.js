@@ -57,8 +57,8 @@ $(document).on('keydown', function (e) {
 
 // ! ini event buat di hp
 
-$('body').on('keydown', function(e){
-    alert( e.which );
+$('body').on('keydown', function(){
+    alert('udah keteken');
   });
 
 $('.btn').click(function(){
