@@ -60,8 +60,8 @@ $(document).on('keydown', function (e) {
 
 $(function($) { // DOM ready and $ alias secured
 
-    $(window).on('keydown', function(e){
-      alert( e.which );
+    $(window).on('keydown', function(){
+      alert('udah ketekan');
     });
   
   });
