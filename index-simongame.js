@@ -58,7 +58,7 @@ $(document).on('keydown', function (e) {
 // ! ini event buat di hp
 
 
- $('h1').on('click touchend', function(){
+ $('h1').on('tap', function(){
         if (!started) {
 
             $('#level-title').text(`Level ${level}`);
